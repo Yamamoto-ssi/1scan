@@ -15,12 +15,11 @@ body{
 }
 
 .form-container{
-    width: 700px;
+    width: 600px;
     background: #fff;
     padding: 40px 40px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
 }
 
 .form-container h2{
@@ -37,4 +36,23 @@ input, select{
     outline: none;
     border-radius: 6px;
     font-size: 16px;
+}
+.btn-box {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-box button,
+.btn-box a {
+    text-decoration: none;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    padding: 8px 50px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #28a745;
 }

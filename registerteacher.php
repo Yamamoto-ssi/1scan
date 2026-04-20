@@ -20,15 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->query($sql) === TRUE) {
         $registration_success = true;
         
-        // Generate teacher QR code with login info
+  
         $teacher_data = "Username: $username | Email: $email";
         $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . urlencode($teacher_data);
-        
-        // Send email using PHPMailer
+
         $mail = new PHPMailer(true);
         
         try {
-            // SMTP Configuration
+
             $mail->isSMTP();
             $mail->Host = MAIL_HOST;
             $mail->SMTPAuth = true;
@@ -37,13 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = MAIL_PORT;
 
-            // Email Details
             $mail->setFrom(MAIL_FROM, MAIL_FROM_NAME);
             $mail->addAddress($email, $username);
             $mail->Subject = "Teacher Registration Successful - 1Scan System";
             $mail->isHTML(true);
             
-            // Email Body
+
             $mail->Body = "
             <h2>Welcome to 1Scan System!</h2>
             <p>Dear $username,</p>
@@ -65,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail_sent = true;
             
         } catch (Exception $e) {
-            // Email failed but registration succeeded
+
             echo "<p style='color: orange;'>✓ Teacher added but email failed: " . $mail->ErrorInfo . "</p>";
         }
         
