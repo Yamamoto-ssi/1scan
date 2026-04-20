@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (!is_dir($qrcode_dir)) {
                 mkdir($qrcode_dir, 0777, true);
             }
-
+            
             $student_data_qr = "Name: $name | Email: $email | Section: $section | ID: $studentid";
             $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . urlencode($student_data_qr);
         
@@ -164,6 +164,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <option value="act1a">ACT1A</option>
                     <option value="act1b">ACT1B</option>
                     <option value="act1c">ACT1C</option>
+                    <option value="act1a">ACT1D</option>
+                    <option value="act1b">ACT1E</option>
+                    <option value="act1c">ACT1F</option>
+                    <option value="act1a">ACT1G</option>
+                    <option value="act1b">ACT1H</option>
+                    <option value="act1c">ACT1I</option>
                 </select>
                 <input type="text" name="studentid" placeholder="Student Id" required>
                 <input type="submit" id="register-button" value="Register">
