@@ -8,18 +8,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Dashboard</h1>
         <div style="margin-bottom: 20px;">
-            <a href="attendance.php" style="padding: 10px 20px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
-                Barcode Scanner (Attendance)
+            <a href="attendance.php" style="padding: 10px 20px; background: #3B1C32; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
+                Scan a QR Code
             </a>
-            <a href="attendance_report.php" style="padding: 10px 20px; background: #17a2b8; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-left: 10px;">
-                View Attendance Report
+            <a href="attendance_report.php" style="padding: 10px 20px; background: #3B1C32; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-left: 10px;">
+                View Attendance
+            </a>
+            <a href="index.php" style="padding: 10px 20px; background: #ff0000; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-left: 10px;">
+                Logout
             </a>
         </div>
         <table>
@@ -53,8 +56,6 @@
             </tr>
     <?php endwhile; ?>
         </table>
-        
-        
     </div>
 </body>
 </html>

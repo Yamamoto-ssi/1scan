@@ -1,5 +1,7 @@
         body {
             padding: 20px 90px;
+            background: #1A1A1D;
+            color: #ffffff;
         }
         .stats {
             display: flex;
@@ -44,7 +46,7 @@
         }
         
         .attendance-table th {
-            background: #007bff;
+            background: #3B1C32;
             color: white;
             padding: 15px;
             text-align: left;
@@ -55,9 +57,6 @@
             border-bottom: 1px solid #ddd;
         }
         
-        .attendance-table tr:hover {
-            background: #f5f5f5;
-        }
         
         .badge {
             display: inline-block;

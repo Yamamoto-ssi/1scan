@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register!</title>
+    <title>Register</title>
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
@@ -102,6 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="password" name="password" placeholder="Password" required>
                     <input type="submit" value="Register">
                 </form>
+                <p style="margin-top: 15px;"><a href="index.php" style="color: blue; text-decoration: none;">Back to Login</a></p>
             <?php endif; ?>
         </div>
     </div>

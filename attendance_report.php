@@ -1,15 +1,14 @@
 <?php
 include 'db.php';
 
+//Helped by Ai
 
 $query = mysqli_query($conn, "SELECT * FROM attendance ORDER BY scan_time DESC LIMIT 100");
 
-//hete we used ai to make an output for the date and time
 $today = date('Y-m-d');
 $today_query = mysqli_query($conn, "SELECT COUNT(*) as count FROM attendance WHERE DATE(scan_time)='$today'");
 $today_count = $today_query ? mysqli_fetch_array($today_query)['count'] : 0;
 
-// Get total attendance this week
 $week_start = date('Y-m-d', strtotime('monday this week'));
 $week_query = mysqli_query($conn, "SELECT COUNT(*) as count FROM attendance WHERE DATE(scan_time) >= '$week_start'");
 $week_count = $week_query ? mysqli_fetch_array($week_query)['count'] : 0;

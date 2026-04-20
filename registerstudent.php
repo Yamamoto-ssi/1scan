@@ -148,6 +148,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </script>
                 
                 <p><a href="registerstudent.php" style="color: blue; text-decoration: none;"> <br> Register Another Student</a></p>
+                <p><a href="index.php" style="color: blue; text-decoration: none;">Back to Login</a></p>
             </div>
         <?php else: ?>
      
@@ -174,6 +175,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="text" name="studentid" placeholder="Student Id" required>
                 <input type="submit" id="register-button" value="Register">
             </form>
+            <p style="margin-top: 15px;"><a href="index.php" style="color: blue; text-decoration: none;">Back to Login</a></p>
         </div>
         <?php endif; ?>
         <script>

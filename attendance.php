@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             
             <!-- Hidden input for barcode scanner (acts as keyboard input) -->
-            <input type="text" id="barcode_input" class="scanner-input" placeholder="🔍 Focus here and scan QR code..." autofocus>
+            <input type="text" id="barcode_input" class="scanner-input" placeholder="Focus here and scan QR code..." autofocus>
             
             <?php if ($attendance_marked): ?>
                 <div class="result success">
@@ -101,8 +101,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         
         <p style="text-align: center; margin-top: 30px;">
-            <a href="dashboard.php" style="color: #007bff; text-decoration: none; font-weight: bold;">← Back to Dashboard</a> | 
-            <a href="attendance_report.php" style="color: #28a745; text-decoration: none; font-weight: bold;">📊 View Attendance Report</a>
+            <a href="dashboard.php" style="color: #ffffff; text-decoration: none; font-weight: bold;">← Back to Dashboard</a> | 
+            <a href="attendance_report.php" style="color: #ffffff; text-decoration: none; font-weight: bold;">View Attendance Report</a>
         </p>
     </div>
     
