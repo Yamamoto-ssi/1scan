@@ -21,8 +21,8 @@
                 <input type="password" name="password" required>
         <button type="submit">Log in !</button>
     </form>
-    <a href="registerstudent.php">Register a Student</a> <br>
-    <a href="registerteacher.php">Register a Teacher</a>
+    <a href="registerstudent.php" class="reg">Register a Student</a> <br>
+    <a href="registerteacher.php" class="reg">Register a Teacher</a>
     
 </div>
 </body>
